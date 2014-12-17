@@ -4,6 +4,6 @@
 
 <% @dogs.each do |dog| %>
 	<ul>
-		<li><%= dog_info(dog) %></li>
+		<li><%= dog_info(dog) %> <%= link_to 'edit this dog', edit_dog_path(dog) %></li>
 	</ul>
 <% end %>

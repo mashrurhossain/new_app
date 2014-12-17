@@ -1,0 +1,12 @@
+<%= form_for @dog do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<br/>
+	<%= f.label :height_in_inches, 'Height' %>
+	<%= f.text_field :height_in_inches %>
+	<br/>
+	<%= f.label :weight_in_lbs, 'Weight' %>
+	<%= f.text_field :weight_in_lbs %>
+	<br/>
+	<%= f.submit(@dog.new_record? ? 'Create Dog' : 'Edit the dog') %>
+<% end %>
