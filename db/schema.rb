@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141216224725) do
+ActiveRecord::Schema.define(version: 20141217024535) do
+
+  create_table "dogs", force: true do |t|
+    t.string  "name"
+    t.integer "height_in_inches"
+    t.integer "weight_in_lbs"
+  end
 
   create_table "posts", force: true do |t|
     t.integer  "user_id"
